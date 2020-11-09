@@ -70,13 +70,13 @@ end
 
 def runner
   # code runner here
-  welcome
-  user_hand = initial_round
-  card_total = user_hand
+  welcome # welcome user
+  user_hand = initial_round # give initial two cards and set total to variable
+  card_total = user_hand # user hand is equal to card total to be used moving forward
 
-  until card_total >= 21
-    card_total = hit?(card_total)
-    display_card_total(card_total)
+  until card_total >= 21 # until the card total is 21 or more
+    card_total = hit?(card_total) # prompt user to hit or stay
+    display_card_total(card_total) # display card total each time 
   end
-end_game(card_total)
+end_game(card_total) # tell user the game is over and what their final score is
 end
