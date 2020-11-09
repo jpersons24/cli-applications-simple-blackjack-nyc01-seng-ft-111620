@@ -52,10 +52,9 @@ def hit?(current_card_total)
     new_card = deal_card
     current_card_total += new_card
   elsif user_input == 's'
-    user_hand
+    current_card_total
   end
-
-  user_hand
+  current_card_total
 end
 
 def invalid_command
