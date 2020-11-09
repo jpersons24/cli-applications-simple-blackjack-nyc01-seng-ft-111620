@@ -76,7 +76,7 @@ def runner
 
   until card_total >= 21 # until the card total is 21 or more
     card_total = hit?(card_total) # prompt user to hit or stay
-    display_card_total(card_total) # display card total each time 
+    display_card_total(card_total) # display card total each time
   end
 end_game(card_total) # tell user the game is over and what their final score is
 end
