@@ -70,6 +70,8 @@ end
 
 def runner
   # code runner here
+  # helper methods focus on each individual task to drive game forward
+
   welcome # welcome user
   user_hand = initial_round # give initial two cards and set total to variable
   card_total = user_hand # user hand is equal to card total to be used moving forward
